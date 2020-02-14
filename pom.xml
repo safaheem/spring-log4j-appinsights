@@ -69,8 +69,8 @@
                <version>1.9.0</version>
                <configuration>
                    <schemaVersion>V2</schemaVersion>
-                   <resourceGroup>gs-spring-boot-1559091271202-rg</resourceGroup>
-                   <appName>spring-log4j-app-2</appName>
+                   <resourceGroup>my-resource-group-name</resourceGroup>
+                   <appName>my-app-name</appName>
                    <region>centralus</region>
                    <pricingTier>B1</pricingTier>
                    <runtime>

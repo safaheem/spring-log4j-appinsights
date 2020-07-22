@@ -83,8 +83,8 @@
                <version>1.9.0</version>
                <configuration>
                    <schemaVersion>V2</schemaVersion>
-                   <resourceGroup>DockerDemo</resourceGroup>
-                   <appName>springlog4jai</appName>
+                   <resourceGroup>myResourceGroup</resourceGroup>
+                   <appName>myAppName</appName>
                    <region>centralus</region>
                    <pricingTier>S1</pricingTier>
                    <runtime>

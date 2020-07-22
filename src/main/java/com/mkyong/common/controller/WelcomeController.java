@@ -16,14 +16,17 @@ public class WelcomeController {
 
 		//logs debug message
 		if(logger.isDebugEnabled()){
-			logger.debug("getWelcome is executed!");
+			logger.debug("Debug:getWelcome is being executed!");
+			logger.trace("Trace: In isDebugEnabled()");
 		}
 		
 		//logs exception
-		logger.error("This is Error message", new Exception("Testing"));
+	//	logger.error("This is Error message", new Exception("Testing"));
 		
 		ModelAndView model = new ModelAndView("welcome");
 		model.addObject("msg", "Hello Spring MVC + Log4j");
+		logger.trace("Trace: Page displayed");
+		logger.debug("Debug: Welcome page rendered");
 		return model;
 
 	}

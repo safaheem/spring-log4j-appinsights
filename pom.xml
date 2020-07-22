@@ -16,8 +16,22 @@
 	</properties>
 
 	<dependencies>
-	
-
+	    
+        <dependency>
+          <groupId>com.microsoft.azure</groupId>
+          <artifactId>applicationinsights-web-auto</artifactId>
+          <!-- or applicationinsights-web for manual web filter registration -->
+          <!-- or applicationinsights-core for bare API -->
+          <version>2.5.0</version>
+        </dependency>
+     
+       
+       <dependency>
+          <groupId>com.microsoft.azure</groupId>
+          <artifactId>applicationinsights-logging-log4j1_2</artifactId>
+          <version>[2.0,)</version>
+       </dependency>
+      
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
@@ -28,7 +42,7 @@
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
-			<version>${log4j.version}</version>
+			<version>1.2.17</version>
 		</dependency>
 
 		<!-- jstl -->
@@ -69,10 +83,10 @@
                <version>1.9.0</version>
                <configuration>
                    <schemaVersion>V2</schemaVersion>
-                   <resourceGroup>my-resource-group-name</resourceGroup>
-                   <appName>my-app-name</appName>
+                   <resourceGroup>DockerDemo</resourceGroup>
+                   <appName>springlog4jai</appName>
                    <region>centralus</region>
-                   <pricingTier>B1</pricingTier>
+                   <pricingTier>S1</pricingTier>
                    <runtime>
                       <os>linux</os>
                       <javaVersion>jre8</javaVersion>
